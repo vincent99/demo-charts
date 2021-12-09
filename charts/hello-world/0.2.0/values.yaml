@@ -25,3 +25,21 @@ serviceAccount:
 service:
   type: ClusterIP
   port: 80
+
+fromValues:
+  #unset
+  setButEmpty: ''
+  setNonEmpty: 'hello'
+
+fromQuestions:
+  #unset
+  #setButEmpty: ''
+  #setNonEmpty: 'hello'
+
+key:
+  'with-hyphen': foo
+  'another-hyphen': bar
+  'with.dot': baz
+
+minMax: 0
+stringValidation: 'hello'

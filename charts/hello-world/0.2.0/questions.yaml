@@ -1,0 +1,34 @@
+questions:
+  - variable: 'fromValues.unset'
+    label: 'From Values, Unset'
+  - variable: 'fromValues.setButEmpty'
+    label: 'From Values, set but empty'
+  - variable: 'fromValues.setNonEmpty'
+    label: 'From Values, set and non-empty'
+
+  - variable: 'fromQuestions.unset'
+    label: 'From Questions, Unset'
+    default: fromQuestion1
+  - variable: 'fromQuestions.setButEmpty'
+    label: 'From Questions, set but empty'
+    default: fromQuestion2
+  - variable: 'fromQuestions.setNonEmpty'
+    label: 'From Questions, set and non-empty'
+    default: fromQuestion3
+
+  - variable: 'key.with-hyphen'
+    lable: 'With hyphen'
+  - variable: 'key."another-hyphen"'
+    lable: 'Another hyphen (quoted)'
+  - variable: 'key."with.dot"'
+    lable: 'With dot (quoted)'
+
+  - variable: 'minMax'
+    min: 1
+    max: 255
+  - variable: stringValidation
+    min_length: 10
+    max_length: 20
+    valid_chars: 'a-zA-Z'
+    invalid_chars: 'q'
+
