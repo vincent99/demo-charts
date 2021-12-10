@@ -43,3 +43,11 @@ key:
 
 minMax: 0
 stringValidation: 'hello'
+
+conditional1: 42
+conditional2: 42
+conditional3: 42
+
+x: 4
+y: 2
+

@@ -1,6 +1,7 @@
 questions:
   - variable: 'fromValues.unset'
     label: 'From Values, Unset'
+    required: true
   - variable: 'fromValues.setButEmpty'
     label: 'From Values, set but empty'
   - variable: 'fromValues.setNonEmpty'
@@ -17,11 +18,11 @@ questions:
     default: fromQuestion3
 
   - variable: 'key.with-hyphen'
-    lable: 'With hyphen'
+    label: 'With hyphen'
   - variable: 'key."another-hyphen"'
-    lable: 'Another hyphen (quoted)'
+    label: 'Another hyphen (quoted)'
   - variable: 'key."with.dot"'
-    lable: 'With dot (quoted)'
+    label: 'With dot (quoted)'
 
   - variable: 'minMax'
     min: 1
@@ -32,3 +33,12 @@ questions:
     valid_chars: 'a-zA-Z'
     invalid_chars: 'q'
 
+  - variable: 'conditional1'
+    show_if: "key.with-hyphen != foo"
+    label: 'Conditional with hyphen'
+  - variable: 'conditional2'
+    show_if: "key.'with-hyphen' != foo"
+    label: 'Conditional with hyphen, quoted'
+  - variable: 'conditional3'
+    show_if: "x-y > 2"
+    label: 'Conditional subtraction'
